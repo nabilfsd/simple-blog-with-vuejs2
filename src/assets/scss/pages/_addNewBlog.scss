@@ -1,0 +1,84 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  #add-new-blog .container .form-wrapper .form-group .base-input {
+    width: 430px !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  #add-new-blog .container .form-wrapper .form-group .base-input {
+    width: 430px !important;
+  }
+}
+
+#add-new-blog {
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .form-wrapper {
+      width: 100%;
+      border-radius: 0 0 12px 12px;
+      background-color: $mainHeaderBG;
+      padding-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      .form-group {
+        padding: 10px 0;
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+
+        .base-input {
+          width: 600px;
+        }
+
+        label {
+          margin-bottom: 5px;
+          font-weight: 700px;
+        }
+
+        textarea {
+          padding-top: 15px;
+        }
+      }
+
+      .submit-button {
+        @include fancyButton;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+
+    .create-new-blog-again-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .create-new-blog-again {
+        margin-top: 20px;
+
+        @include fancyButton;
+        margin-left: 0;
+        margin-bottom: 50px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+        &__button {
+          @include fancyButton;
+          margin-left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+        }
+      }
+    }
+  }
+}

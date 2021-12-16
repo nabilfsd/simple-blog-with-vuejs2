@@ -1,0 +1,431 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  #header-section {
+    background: $navBG;
+    height: 75px;
+    border-bottom: 2px solid $navbarBorderColor;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .naviagation-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+
+        .logo {
+          font-size: 24px;
+          line-height: 24px;
+          display: flex;
+          justify-content: start;
+          color: $orageTextColor;
+          font-weight: 700;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar {
+          .list {
+            display: flex;
+            font-size: 14px;
+            line-height: 15.4px;
+            font-weight: 500;
+
+            .list-item {
+              list-style: none;
+              padding: 0 12px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              &:hover .list-item-router::before {
+                width: 100%;
+              }
+
+              .list-item-router {
+                color: $navbarMenuMainTextColor;
+                position: relative;
+              }
+
+              .list-item-router::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $orageTextColor;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: .3s;
+              }
+
+              .router-link-active {
+                color: $orageTextColor;
+                transition: all .3s ease-in-out;
+
+                &::before {
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: $orageTextColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  #header-section {
+    background: $navBG;
+    height: 75px;
+    border-bottom: 2px solid $navbarBorderColor;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .naviagation-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 700px;
+
+        .logo {
+          font-size: 24px;
+          line-height: 24px;
+          display: flex;
+          justify-content: start;
+          color: $orageTextColor;
+          font-weight: 700;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar {
+          .list {
+            display: flex;
+            font-size: 14px;
+            line-height: 15.4px;
+            font-weight: 500;
+
+            .list-item {
+              list-style: none;
+              padding: 0 12px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              &:hover .list-item-router::before {
+                width: 100%;
+              }
+
+              .list-item-router {
+                color: $navbarMenuMainTextColor;
+                position: relative;
+              }
+
+              .list-item-router::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $orageTextColor;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: .3s;
+              }
+
+              .router-link-active {
+                color: $orageTextColor;
+                transition: all .3s ease-in-out;
+
+                &::before {
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: $orageTextColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  #header-section {
+    background: $navBG;
+    height: 75px;
+    border-bottom: 2px solid $navbarBorderColor;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .naviagation-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 700px;
+
+        .logo {
+          font-size: 32px;
+          line-height: 32px;
+          display: flex;
+          justify-content: start;
+          color: $orageTextColor;
+          font-weight: 700;
+          margin-right: 120px;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar {
+          .list {
+            display: flex;
+            font-size: 14px;
+            line-height: 15.4px;
+            font-weight: 500;
+
+            .list-item {
+              list-style: none;
+              padding: 0 12px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              &:hover .list-item-router::before {
+                width: 100%;
+              }
+
+              .list-item-router {
+                color: $navbarMenuMainTextColor;
+                position: relative;
+              }
+
+              .list-item-router::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $orageTextColor;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: .3s;
+              }
+
+              .router-link-active {
+                color: $orageTextColor;
+                transition: all .3s ease-in-out;
+
+                &::before {
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: $orageTextColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header-section {
+    background: $navBG;
+    height: 75px;
+    border-bottom: 2px solid $navbarBorderColor;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .naviagation-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 700px;
+
+        .logo {
+          font-size: 32px;
+          line-height: 32px;
+          display: flex;
+          justify-content: start;
+          color: $orageTextColor;
+          font-weight: 700;
+          margin-right: 120px;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar {
+          .list {
+            display: flex;
+            font-size: 14px;
+            line-height: 15.4px;
+            font-weight: 500;
+
+            .list-item {
+              list-style: none;
+              padding: 0 12px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              &:hover .list-item-router::before {
+                width: 100%;
+              }
+
+              .list-item-router {
+                color: $navbarMenuMainTextColor;
+                position: relative;
+              }
+
+              .list-item-router::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $orageTextColor;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: .3s;
+              }
+
+              .router-link-active {
+                color: $orageTextColor;
+                transition: all .3s ease-in-out;
+
+                &::before {
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: $orageTextColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #header-section {
+    background: $navBG;
+    height: 75px;
+    border-bottom: 2px solid $navbarBorderColor;
+
+    .container {
+      display: flex;
+      justify-content: center;
+
+      .naviagation-wrapper {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 700px;
+
+        .logo {
+          font-size: 32px;
+          line-height: 32px;
+          display: flex;
+          justify-content: start;
+          color: $orageTextColor;
+          font-weight: 700;
+          margin-right: 120px;
+          font-family: 'Comfortaa', cursive;
+        }
+
+        .navbar {
+          .list {
+            display: flex;
+            font-size: 14px;
+            line-height: 15.4px;
+            font-weight: 500;
+
+            .list-item {
+              list-style: none;
+              padding: 0 12px;
+
+              &:last-child {
+                padding-right: 0;
+              }
+
+              &:hover .list-item-router::before {
+                width: 100%;
+              }
+
+              .list-item-router {
+                color: $navbarMenuMainTextColor;
+                position: relative;
+              }
+
+              .list-item-router::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 0;
+                background: $orageTextColor;
+                top: 20px;
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: .3s;
+              }
+
+              .router-link-active {
+                color: $orageTextColor;
+                transition: all .3s ease-in-out;
+
+                &::before {
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: $orageTextColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

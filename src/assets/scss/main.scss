@@ -1,0 +1,41 @@
+// 1. Configuration and helpers  => /utils
+@import './utils/margin',
+'./utils/padding',
+'./utils/variables',
+'./utils/functions',
+'./utils/mixins',
+'./utils/helpers';
+
+// 2. Vendors  => /vendors
+@import './vendors/customRules';
+
+// 3. Base stuff  => /base
+@import './base/crossBrowser',
+'./base/normalize',
+'./base/typography';
+
+// 4. Layout-related sections  => /layout
+@import './layout/header',
+'./layout/footer',
+'./layout/sidebar',
+'./layout/forms';
+
+// 5. Components  => /components
+@import './components/buttons',
+'./components/carousel',
+'./components/dropdowns';
+
+// 6. Page-specific styles  => /pages
+@import './pages/home',
+'./pages/user',
+'./pages/addNewBlog',
+'./pages/profile',
+'./pages/contact';
+
+// 7. Themes  => /themes
+@import './themes/theme',
+'./themes/admin';
+
+body {
+  font-family: 'Inter', sans-serif;
+}
