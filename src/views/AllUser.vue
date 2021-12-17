@@ -39,9 +39,11 @@
           <table class="table">
             <thead class="thead">
               <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Website</th>
+                <th><button @click.prevent="sortByName">Name</button></th>
+                <th><button @click.prevent="sortByEmail">Email</button></th>
+                <th>
+                  <button @click.prevent="sortByWebsite">Website</button>
+                </th>
               </tr>
             </thead>
             <tbody class="tbody">
@@ -74,9 +76,42 @@ export default {
 
   data() {
     return {
+      sortByAsc: true,
       allUser: [],
       searchUser: "",
     };
+  },
+
+  methods: {
+    sortByName() {
+      if (this.sortByAsc) {
+        this.allUser.sort((a, b) => (a.name > b.name ? 1 : -1));
+        this.sortByAsc = !this.sortByAsc;
+      } else {
+        this.allUser.sort((b, a) => (b.name > a.name ? -1 : 1));
+        this.sortByAsc = !this.sortByAsc;
+      }
+    },
+
+    sortByEmail() {
+      if (this.sortByAsc) {
+        this.allUser.sort((a, b) => (a.email > b.email ? 1 : -1));
+        this.sortByAsc = !this.sortByAsc;
+      } else {
+        this.allUser.sort((b, a) => (b.email > a.email ? -1 : 1));
+        this.sortByAsc = !this.sortByAsc;
+      }
+    },
+
+    sortByWebsite() {
+      if (this.sortByAsc) {
+        this.allUser.sort((a, b) => (a.website > b.website ? 1 : -1));
+        this.sortByAsc = !this.sortByAsc;
+      } else {
+        this.allUser.sort((b, a) => (b.website > a.website ? -1 : 1));
+        this.sortByAsc = !this.sortByAsc;
+      }
+    },
   },
 
   computed: {
@@ -89,6 +124,12 @@ export default {
         );
       });
     },
+
+    // sortByName: function () {
+    //   return this.allUser.sort(function (a, b) {
+    //     return a.name > b.name;
+    //   });
+    // },
   },
 
   created() {

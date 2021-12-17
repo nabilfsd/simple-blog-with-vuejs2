@@ -8,7 +8,7 @@
     width: 500px !important;
 
     .thead {
-      td {
+      th {
         font-size: 14px !important;
       }
     }
@@ -100,6 +100,13 @@
             margin: 0;
             border-radius: 8px;
             color: $navbarMenuMainTextColor;
+            cursor: pointer;
+
+            button {
+              background-color: white;
+              border: 0;
+              cursor: pointer;
+            }
           }
         }
 
